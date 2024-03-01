@@ -13,23 +13,23 @@
     Cart Quantity
   </div>
 
-  <button class="show-quantity btn" onclick="console.log(cartQuantity);">
+  <button class="show-quantity btn" onclick="console.log(`Cart Quantity: ${cartQuantity}.`);">
     Show Quantity
   </button>
 
-  <button class="add btn" onclick="console.log(cartQuantity = cartQuantity + 1);">
+  <button class="add btn" onclick=" cartQuantity++; console.log(`Cart Quantity: ${cartQuantity}`);">
     +1
   </button>
 
-  <button class="show btn" onclick="console.log(cartQuantity = cartQuantity + 2);">
+  <button class="show btn" onclick=" cartQuantity += 2; console.log(`Cart Quantity: ${cartQuantity}`);">
     +2
   </button>
 
-  <button class="show btn" onclick="console.log(cartQuantity = cartQuantity + 3);">
+  <button class="show btn" onclick=" cartQuantity += 3; console.log(`Cart Quantity: ${cartQuantity}`);">
     +3
   </button>
 
-  <button class="reset-cart btn" onclick=" cartQuantity = cartQuantity - cartQuantity; console.log('Cart Reset');">
+  <button class="reset-cart btn" onclick=" cartQuantity = 0; console.log('Cart was reset.');">
     Reset Cart
   </button>
 
